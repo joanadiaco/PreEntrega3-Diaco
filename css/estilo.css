@@ -1,0 +1,127 @@
+/*Reseteo de CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+header{
+    color: #847c7c;
+    font-family: 'Tenor Sans', sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Grid para Navbar superior (Buscador + Logo + Botones) */
+.navbar{
+    display: grid;
+    grid-column: repeat(3,1fr 2fr 1fr);
+    grid-row: 1, 1fr;
+    grid-template-areas: 
+    "buscador logo logo botones";
+}
+.container-fluid{
+    grid-area: buscador;
+}
+.logoHeader{
+    grid-area: logo;
+}
+.botones{
+    grid-area: botones;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+main{
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div1{
+    margin:10px 10px 100px 10px;
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+.div1 h1{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    background-color: #847c7c;
+    color: aliceblue;
+}
+.div1 p{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.div2{
+    margin:10px 10px 50px 10px;
+    padding: 10px;
+}
+.div2 h1{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    color: #847c7c;
+    background-color: bisque;
+}
+.div2 h5, h6{
+    font-family: 'Lora', serif;
+}
+.div2 p{
+    font-size: 15px;
+    font-style: italic;
+}
+.div2 a{
+    font-family: 'Tenor Sans', sans-serif;
+    text-transform: uppercase;
+}
+.div2 .col{
+    margin-top: 50px;
+}
+
+
+
+footer{
+    margin: 10px;
+    padding: 10px;
+}
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "logoFooter contacto redes newsletter";
+    justify-items: center;
+    align-items: flex-start;
+}
+.logoFooter{
+    align-self: center;
+}
+footer h5{
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: bold;
+}
+footer svg{
+    margin: 10px;
+}
+footer form{
+    font-family: 'Lora', serif;
+}
